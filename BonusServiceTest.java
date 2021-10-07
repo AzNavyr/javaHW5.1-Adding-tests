@@ -25,7 +25,7 @@ class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForUnregisteredAndOverLimit() {
+    void shouldCalculateForUnregisteredAndUnderLimit() {
         BonusService service = new BonusService();
         long amount = 1_000;
         boolean registered = false;
@@ -35,7 +35,7 @@ class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForUnristeredAndOverLimit() {
+    void shouldCalculateForUnregisteredAndOverLimit() {
         BonusService service = new BonusService();
         long amount = 1_000_000;
         boolean registered = false;
